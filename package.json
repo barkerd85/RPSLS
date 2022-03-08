@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/barkerd85/RPSLS/issues"
   },
-  "homepage": "https://github.com/barkerd85/RPSLS#readme"
+  "homepage": "https://github.com/barkerd85/RPSLS#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
