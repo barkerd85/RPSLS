@@ -22,7 +22,7 @@ class Human extends Player {
     }
 
     getRandomChoice() {
-        this.gesture1 = prompt("Choose a gesture: rock, paper, scissors, lizard, or spock." + " ");
+        this.gesture1 = prompt("Choose: rock, paper, scissors, lizard, or spock." + " ");
         
 
     }
@@ -35,7 +35,7 @@ class AI extends Player {
     }
     getRandomChoice() {
         this.gesture1 = this.gestures[Math.floor(Math.random() * this.gestures.length)];
-        console.log("Super Computer chose" + " " + this.gesture1);
+        console.log("Super Computer chooses" + " " + this.gesture1);
     }
 }
 
