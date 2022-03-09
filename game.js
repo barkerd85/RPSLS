@@ -41,14 +41,14 @@ class Game {
         this.playerOne = new Human(newName);
         let opponentType = prompt("Would you like to play single or multiplayer?" + " ");
         if (opponentType == "multiplayer") {
-            let playerTwoName = prompt("PlayerTwo what is your name?" + " ");
-            this.playerTwo = new Human(playerTwoName);
+            let newNameTwo = prompt("PlayerTwo what is your name?" + " ");
+            this.playerTwo = new Human(newNameTwo);
         }
         else if (opponentType == "single") {
             this.playerTwo = new AI("Super Computer")
         }
         else {
-            console.log("Error... Please choose an available option.");
+            console.log("Invalid input....please choose again.");
         }
     }
 }
