@@ -19,22 +19,39 @@ class Game {
         this.gameSetup();
         this.startGame();
 
+        while (this.playerOne.score < 2 && this.playerTwo.score < 2) {
+            this.playerOne.getRandomChoice();
+            this.playerTwo.getRandomChoice();
+        }
+
+        this.displayGameWinner();
+    }
+
+    displayGameWinner() {
+        if (this.playerOne.score > this.playerTwo.score) {
+            console.log(this.playerOne.name + " " + "WINS THE GAME!");
+            console.log(this.playerOne.score);
+        }
+        else {
+            console.log(this.playerTwo.name + " " + "WINS THE GAME!");
+            console.log(this.playerTwo.score);
+        }
     }
 
     startGame() {
         console.log("Welcome to the Rock, Paper, Scissors, Lizard, Spock Arena!");
         console.log("You can play single or multiplayer in a best of 3 tournament.");
         console.log("The rules are as follows:");
-        console.log("Rock crushed Scissors");
-        console.loge("Scissors cut Paper");
-        console.log("Paper covered Rock");
-        console.log("Rock crushed Lizard");
-        console.log("Lizard poisoned Spock");
-        console.log("Spock smashed Scissors");
-        console.log("Scissors decapitated Lizard");
-        console.log("Lizard ate Paper");
-        console.log("Paper disproved Spock");
-        console.log("Spock vaporized Rock");
+        console.log("-Rock crushed Scissors-");
+        console.log("-Scissors cut Paper-");
+        console.log("-Paper covered Rock-");
+        console.log("-Rock crushed Lizard-");
+        console.log("-Lizard poisoned Spock-");
+        console.log("-Spock smashed Scissors-");
+        console.log("-Scissors decapitated Lizard-");
+        console.log("-Lizard ate Paper-");
+        console.log("-Paper disproved Spock-");
+        console.log("-Spock vaporized Rock-");
     }
 
     gameSetup() {
