@@ -35,6 +35,22 @@ class Game {
         console.log("Paper disproves Spock");
         console.log("Spock vaporizes Rock");
     }
+
+    gameSetup() {
+        let newName = prompt("PlayerOne what is your name?" +  " ");
+        this.playerOne = new Human(newName);
+        let opponentType = prompt("Are you playing against the AI or another human?" + " ");
+        if (opponentType == "human") {
+            let playerTwoName = prompt("PlayerTwo what is your name?" + " ");
+            this.playerTwo = new Human(playerTwoName);
+        }
+        else if (opponentType == "AI") {
+            this.playerTwo = new AI("Bot")
+        }
+        else {
+            console.log("Error... Please choose an available option.");
+        }
+    }
 }
 
 
