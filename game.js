@@ -12,6 +12,7 @@ class Game {
     constructor() {
         this.playerOne;
         this.playerTwo;
+        this.gestures = [];
     }
 
     runGame(){
