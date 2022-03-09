@@ -7,8 +7,8 @@
 
 const prompt = require("prompt-sync")();
 class Player {
-    constructor(names) {
-        this.name = names;
+    constructor(namestr) {
+        this.name = namestr;
         this.score = 0;
         this.gestures = ["rock", "paper", "scissors", "lizard", "spock"];
         this.gesture1;
@@ -17,8 +17,8 @@ class Player {
 
 //inheritances
 class Human extends Player {
-    constructor(names) {
-        super(names);
+    constructor(namestr) {
+        super(namestr);
     }
 
     getRandomChoice() {
