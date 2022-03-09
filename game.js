@@ -39,13 +39,13 @@ class Game {
     gameSetup() {
         let newName = prompt("PlayerOne what is your name?" +  " ");
         this.playerOne = new Human(newName);
-        let opponentType = prompt("Are you playing against the AI or another human?" + " ");
-        if (opponentType == "human") {
+        let opponentType = prompt("Would you like to play single or multiplayer?" + " ");
+        if (opponentType == "multiplayer") {
             let playerTwoName = prompt("PlayerTwo what is your name?" + " ");
             this.playerTwo = new Human(playerTwoName);
         }
-        else if (opponentType == "AI") {
-            this.playerTwo = new AI("Bot")
+        else if (opponentType == "single") {
+            this.playerTwo = new AI("Super Computer")
         }
         else {
             console.log("Error... Please choose an available option.");
