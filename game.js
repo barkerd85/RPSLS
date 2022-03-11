@@ -81,7 +81,7 @@ class Game {
     }
 
     startGame() {
-        console.log("Welcome to Rock, Paper, Scissors, Lizard, Spock")
+        console.log(".\n" + "Welcome to Rock, Paper, Scissors, Lizard, Spock!")
         console.log("Best of 3!")
         console.log("Rules(below):")
         console.log("Rock breaks Scissors")
