@@ -22,7 +22,8 @@ class Human extends Player {
     }
 
     getRandomChoice() {
-        this.gesture1 = prompt("Choose: rock, paper, scissors, lizard, or spock." + " ");
+        let userInput = parseInt(prompt("Choose: 0 - rock, 1 - paper, 2 - scissors, 3 - lizard, 4 - spock"));
+        this.gesture1 = this.gestures[userInput];
         
 
     }
