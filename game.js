@@ -90,19 +90,19 @@ class Game {
     }
 
     startGame() {
-        console.log(".\n" + "Welcome to Rock, Paper, Scissors, Lizard, Spock!")
-        console.log("Best of 3!")
-        console.log("Rules(below):")
-        console.log("Rock breaks Scissors")
-        console.log("Rock crushes Lizard")
-        console.log("Paper disproves Spock")
-        console.log("Paper covers Rock")
-        console.log("Scissors decapitate Lizard")
-        console.log("Scissors cut Paper")
-        console.log("Lizard poisons Spock")
-        console.log("Lizard eats Paper")
-        console.log("Spock pockets the Scissors")
-        console.log("Spock vaporizes Rock")
+        console.log(".\n" + `Welcome to Rock, Paper, Scissors, Lizard, Spock!
+    Rules(below):
+-Rock breaks Scissors
+-Rock crushes Lizard
+-Paper disproves Spock
+-Paper covers Rock
+-Scissors decapitate Lizard
+-Scissors cut Paper
+-Lizard poisons Spock
+-Lizard eats Paper
+-Spock pockets the Scissors
+-Spock vaporizes Rock
+    Best of 3!`);
     }
 
     displayGameWinner() {
