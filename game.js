@@ -7,6 +7,15 @@
 
 const prompt = require("prompt-sync")();
 const { Player, Human, AI } = require("./players");
+// const array = [1, 2, 3, 4];
+
+
+// const map = array.map((x, index) => {
+//   console.log(index);
+//   return x + index;
+// });
+
+// console.log(map);
 
 class Game {
     constructor() {
